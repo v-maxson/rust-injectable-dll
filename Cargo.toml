@@ -1,0 +1,20 @@
+[package]
+name = "acinternal"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.winapi]
+version = "0.3.9"
+features = ["std", "everything"]
+
+[dependencies.libc]
+version = "0.2.126"
+features = ["use_std", "extra_traits"]
+
+[dependencies]
+getset = "0.1.2"
+cstr = "0.2.10"
+text_io = "0.1.10"
